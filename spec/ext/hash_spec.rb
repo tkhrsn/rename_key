@@ -1,6 +1,7 @@
 describe Hash do
   [
     [ { foo: "foo", bar: "bar", baz: "baz" }, { foo: :Foo, bar: :Bar }, { Foo: "foo", Bar: "bar", baz: "baz" } ],
+    [ { foo: "foo", bar: "bar", baz: "baz" }, { "foo" => "foo", "bar" => "bar" }, { foo: "foo", bar: "bar", baz: "baz" } ],
   ].each do |base, arg, expect_value|
     describe "#rename_key" do
       context "#{base}.rename_key #{arg}" do
