@@ -1,12 +1,13 @@
 class Hash
-  def rename_key(rename_keys)
-    return_hash = {}
-    self.each do |self_key, self_value|
-      if rename_keys.has_key?(self_key)
-        self_key = rename_keys[self_key]
+  def rename_key(rename_keys = {})
+    self.reduce({}) do |res, (key, val)|
+      if rename_keys.include?(key)
+        res[rename_keys[key]] = val
+      else
+        res[key] = val
       end
-      return_hash[self_key] = self_value
+
+      res
     end
-    return_hash
   end
 end
