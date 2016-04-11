@@ -21,13 +21,16 @@ describe Hash do
     end
   end
 
-  context "引数無し" do
+  context "引数無しの場合" do
     let(:base) { { foo: "foo", bar: "bar", baz: "baz" } }
     subject { base.rename_key }
-    it { is_expected.to eq base }
+
+    it "元のHashと同じ値のHashが返る" do
+      is_expected.to eq base
+    end
   end
 
-  context "Hash以外の引数" do
+  context "Hash以外の引数の場合" do
     let(:base) { { foo: "foo", bar: "bar", baz: "baz" } }
 
     context "String" do
