@@ -12,6 +12,12 @@ describe Hash do
     end
   end
 
+  context "引数無し" do
+    let(:base) { { foo: "foo", bar: "bar", baz: "baz" } }
+    subject { base.rename_key }
+    it { is_expected.to eq base }
+  end
+
   context "Hash以外の引数" do
     let(:base) { { foo: "foo", bar: "bar", baz: "baz" } }
 
