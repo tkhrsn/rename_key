@@ -1,10 +1,6 @@
 [![Build Status](https://travis-ci.org/tkhrsn/rename_key.svg?branch=master)](https://travis-ci.org/tkhrsn/rename_key) [![Coverage Status](https://coveralls.io/repos/github/tkhrsn/rename_key/badge.svg?branch=master)](https://coveralls.io/github/tkhrsn/rename_key?branch=master) [![Code Climate](https://codeclimate.com/github/tkhrsn/rename_key/badges/gpa.svg)](https://codeclimate.com/github/tkhrsn/rename_key)
 
-# RenameKey
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rename_key`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+# Hash#rename_key
 
 ## Installation
 
@@ -24,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'rename_key'
+
+{ foo: "foo", bar: "bar", baz: "baz" }.rename_key({ foo: :Foo, bar: :Bar })
+
+# => { Foo: "foo", Bar: "bar", baz: "baz" }
+```
 
 ## Development
 
