@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/rename_key.svg)](https://badge.fury.io/rb/rename_key)　[![Build Status](https://travis-ci.org/tkhrsn/rename_key.svg?branch=master)](https://travis-ci.org/tkhrsn/rename_key) [![Coverage Status](https://coveralls.io/repos/github/tkhrsn/rename_key/badge.svg?branch=master)](https://coveralls.io/github/tkhrsn/rename_key?branch=master) [![Code Climate](https://codeclimate.com/github/tkhrsn/rename_key/badges/gpa.svg)](https://codeclimate.com/github/tkhrsn/rename_key)
+[![Gem Version](https://badge.fury.io/rb/rename_key.svg)](https://badge.fury.io/rb/rename_key)　[![Build Status](https://travis-ci.org/tkhrsn/rename_key.svg?branch=master)](https://travis-ci.org/tkhrsn/rename_key) [![Coverage Status](https://coveralls.io/repos/github/tkhrsn/rename_key/badge.svg?branch=master)](https://coveralls.io/github/tkhrsn/rename_key?branch=master) [![Code Climate](https://codeclimate.com/github/tkhrsn/rename_key/badges/gpa.svg)](https://codeclimate.com/github/tkhrsn/rename_key) [![Dependency Status](https://gemnasium.com/badges/github.com/tkhrsn/rename_key.svg)](https://gemnasium.com/github.com/tkhrsn/rename_key)
 
 # Hash#rename_key
 
